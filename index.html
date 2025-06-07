@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KiraNutri - Combo Sérum de Niacinamida + SkinProMax</title>
     <meta name="description" content="Descubra o segredo para uma pele impecável com o Combo KiraNutri: Sérum de Niacinamida + SkinProMax. Resultados em apenas 14 dias com satisfação garantida!">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
     <!-- Meta Pixel Code -->
     <script>
@@ -21,26 +21,19 @@
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '2564663427205931');
+      fbq('track', 'PageView');
     </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2564663427205931&ev=PageView&noscript=1"/>
-    </noscript>
     <!-- End Meta Pixel Code -->
-
   </head>
   <body>
     <div id="root"></div>
 
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Meta Pixel noscript aqui, dentro do body -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=2564663427205931&ev=PageView&noscript=1" />
+    </noscript>
 
-    <!-- Disparar evento PageView quando a página carregar -->
-    <script>
-      window.addEventListener('load', function () {
-        if (typeof fbq === 'function') {
-          fbq('track', 'PageView');
-        }
-      });
-    </script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
