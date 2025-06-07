@@ -24,44 +24,40 @@ const OfferSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
             <div className="flex justify-center">
               <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-gold/20 to-gold/5 rounded-full flex items-center justify-center relative">
-  <div className="w-72 h-72 md:w-88 md:h-88 bg-gradient-to-tr from-gold/30 to-transparent rounded-full flex items-center justify-center"></div>
+                <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-gold/20 to-gold/5 rounded-full flex items-center justify-center relative">
+                  <div className="w-72 h-72 md:w-88 md:h-88 bg-gradient-to-tr from-gold/30 to-transparent rounded-full flex items-center justify-center"></div>
 
-  {/* Imagem posicionada no centro e na frente */}
-  <img
-  src="https://i.imgur.com/eNg3sWP.png"
-  alt="Produto Combo KiraNutri"
-  className="absolute inset-0 m-auto object-contain pointer-events-none w-[25rem] h-[25rem]"
-  style={{ zIndex: 10 }}
+                  {/* Nova imagem */}
+                  <img
+                    src="https://i.imgur.com/nXwKXWm.png"
+                    alt="Sérum de Niacinamida"
+                    className="absolute inset-0 m-auto object-contain pointer-events-none w-[25rem] h-[25rem]"
+                    style={{ zIndex: 10 }}
+                  />
+                </div>
 
-  />
-</div>
-
-  
-
-                
-                {/* Product name floating label */}
+                {/* Label do produto */}
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gold text-black 
                 font-bold py-1 px-4 rounded-full text-sm whitespace-nowrap">
-                  Combo KiraNutri
+                  Sérum de Niacinamida
                 </div>
               </div>
             </div>
             
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                <span className="gold-text">Combo KiraNutri</span> — Sérum de Niacinamida + SkinProMax
+                <span className="gold-text">Sérum de Niacinamida</span> — 30ml com fórmula exclusiva
               </h3>
               
               <div className="mb-6">
-                <span className="text-gray-400 line-through text-lg">De R$299,90</span>
+                <span className="text-gray-400 line-through text-lg">De R$149,00</span>
                 <div className="flex items-end gap-2">
-                  <span className="text-3xl md:text-4xl font-bold gold-text">Por R$199,90</span>
+                  <span className="text-3xl md:text-4xl font-bold gold-text">Por R$89,00</span>
                   <span className="bg-gold/20 text-gold text-xs font-bold py-1 px-2 rounded-md mb-1">
-                    ECONOMIZE R$100,00
+                    FRETE GRÁTIS
                   </span>
                 </div>
-                <span className="text-green-400 text-sm font-medium">33% de desconto</span>
+                <span className="text-green-400 text-sm font-medium">40% de desconto</span>
               </div>
               
               <div className="space-y-3 mb-8">
@@ -71,17 +67,7 @@ const OfferSection: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Sérum de Niacinamida 30ml</p>
-                    <p className="text-sm text-gray-400">Fórmula exclusiva com concentração ideal</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="bg-gold/10 p-1 rounded-full">
-                    <ShieldCheck className="h-5 w-5 text-gold" />
-                  </div>
-                  <div>
-                    <p className="font-medium">SkinProMax Hidratante 50g</p>
-                    <p className="text-sm text-gray-400">Tecnologia avançada de hidratação profunda</p>
+                    <p className="text-sm text-gray-400">Fórmula concentrada com alta eficácia no cuidado da pele</p>
                   </div>
                 </div>
                 
@@ -91,15 +77,6 @@ const OfferSection: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Frete grátis para todo o Brasil</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <div className="bg-gold/10 p-1 rounded-full">
-                    <ShieldCheck className="h-5 w-5 text-gold" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Brinde especial surpresa</p>
                   </div>
                 </div>
               </div>
