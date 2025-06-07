@@ -80,7 +80,7 @@ const OfferSection: React.FC = () => {
               <div className="mb-6">
                 <span className="text-gray-400 line-through text-lg">De R$129,90</span>
                 <div className="flex items-end gap-2">
-                  <span className="text-3xl md:text-4xl font-bold gold-text">Por R$99,90</span>
+                  <span className="text-3xl md:text-4xl font-bold gold-text">Por R$89,90</span>
                   <span className="bg-gold/20 text-gold text-xs font-bold py-1 px-2 rounded-md mb-1">
                     ECONOMIZE R$30,00
                   </span>
