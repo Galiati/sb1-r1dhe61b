@@ -29,7 +29,7 @@ const TestimonialsSection: React.FC = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: NodeJS.Timeout | undefined;
     
     if (isAutoPlaying) {
       interval = setInterval(() => {
@@ -37,7 +37,9 @@ const TestimonialsSection: React.FC = () => {
       }, 5000);
     }
     
-    return () => clearInterval(interval);
+    return () => {
+      if(interval) clearInterval(interval);
+    };
   }, [isAutoPlaying]);
 
   const goToPrevious = () => {
@@ -68,7 +70,11 @@ const TestimonialsSection: React.FC = () => {
           Histórias Reais de Transformação
         </h2>
         
-        <div className="relative overflow-hidden">
+        <div 
+          className="relative overflow-hidden" 
+          aria-live="polite"
+          aria-atomic="true"
+        >
           <div 
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -77,6 +83,7 @@ const TestimonialsSection: React.FC = () => {
               <div 
                 key={index}
                 className="min-w-full px-4"
+                aria-hidden={currentIndex !== index}
               >
                 <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-xl p-8 md:p-10">
                   <div className="flex mb-4">
@@ -85,7 +92,7 @@ const TestimonialsSection: React.FC = () => {
                     ))}
                   </div>
                   
-                  <p className="text-xl md:text-2xl italic mb-6 text-gray-100">"{testimonial.quote}"</p>
+                  <p className="text-xl md:text-2xl italic mb-6 text-gray-100 max-w-prose mx-auto">"{testimonial.quote}"</p>
                   
                   <p className="text-gold font-semibold">— {testimonial.author}</p>
                 </div>
@@ -121,6 +128,7 @@ const TestimonialsSection: React.FC = () => {
                 setCurrentIndex(index);
               }}
               aria-label={`Ver depoimento ${index + 1}`}
+              aria-current={currentIndex === index}
               className={`w-3 h-3 rounded-full transition-all duration-300 
               ${currentIndex === index ? 'bg-gold' : 'bg-gold/30 hover:bg-gold/50'}`}
             />
