@@ -2,12 +2,12 @@ import React from 'react';
 
 const TopBanner: React.FC = () => {
   return (
-    <div
-      className="fixed top-0 left-0 w-full bg-[#ff5722] text-white text-center py-1 px-4 z-50 font-semibold cursor-pointer hover:bg-[#e64a19] transition-colors"
-      style={{ height: '40px' }}
-    >
-      <a href="#offer" className="inline-block leading-[40px]">
-        ⚡ Promoção Imperdível: Sérum de Niacinamida com 20% OFF! Clique e aproveite!
+    <div className="fixed top-0 left-0 right-0 h-10 bg-black bg-opacity-90 text-white flex items-center justify-center z-50 px-4">
+      <a
+        href="#offer"
+        className="gold-text font-semibold cursor-pointer hover:underline"
+      >
+        Aproveite a oferta exclusiva e compre agora!
       </a>
     </div>
   );
