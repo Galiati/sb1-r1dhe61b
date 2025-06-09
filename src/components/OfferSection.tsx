@@ -33,7 +33,11 @@ const OfferSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="offer" className="section-padding bg-gradient-to-b from-black/95 to-black relative">
+    <section
+      id="offer"
+      className="section-padding bg-gradient-to-b from-black/95 to-black relative"
+      style={{ scrollMarginTop: '64px' }} // <-- aqui ajusta a margem de scroll para o banner fixo
+    >
       <div className="max-w-6xl mx-auto">
         <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-2xl p-6 md:p-10 lg:p-12 overflow-hidden relative">
           
