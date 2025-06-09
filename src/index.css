@@ -75,3 +75,15 @@
   color: transparent;
   animation: shimmer 3s linear infinite;
 }
+
+/* =================== NOVO: ajuste para compensar banner fixo =================== */
+
+#offer {
+  padding-top: 64px; /* espaço para banner fixo no desktop */
+}
+
+@media (max-width: 767px) {
+  #offer {
+    padding-top: 40px; /* menos espaço no mobile (banner menor) */
+  }
+}
