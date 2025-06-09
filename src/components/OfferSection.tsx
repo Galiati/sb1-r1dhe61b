@@ -35,17 +35,17 @@ const OfferSection: React.FC = () => {
   return (
     <section
       id="offer"
+      style={{ scrollMarginTop: '40px' }} // altura do TopBanner fixo
       className="section-padding bg-gradient-to-b from-black/95 to-black relative"
-      style={{ scrollMarginTop: '64px' }} // <-- aqui ajusta a margem de scroll para o banner fixo
     >
       <div className="max-w-6xl mx-auto">
         <div className="bg-black/40 backdrop-blur-sm border border-gold/20 rounded-2xl p-6 md:p-10 lg:p-12 overflow-hidden relative">
-          
+
           <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-gold/40 rounded-tl-lg"></div>
           <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-gold/40 rounded-tr-lg"></div>
           <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-gold/40 rounded-bl-lg"></div>
           <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold/40 rounded-br-lg"></div>
-          
+
           <h2 className="heading-lg text-center gold-shimmer mb-4">
             Oferta Especial e Exclusiva
           </h2>
@@ -57,7 +57,7 @@ const OfferSection: React.FC = () => {
           <p className="text-center text-gold text-sm mb-8 font-bold">
             Oferta expira em: <span className="font-mono">{timeLeft}</span>
           </p>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12">
             <div className="flex justify-center">
               <div className="relative">
@@ -75,12 +75,12 @@ const OfferSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 <span className="gold-text">Sérum KiraNutri</span> — Niacinamida 10%
               </h3>
-              
+
               <div className="mb-6">
                 <span className="text-gray-400 line-through text-lg">De R$149,90</span>
                 <div className="flex items-end gap-2">
@@ -91,7 +91,7 @@ const OfferSection: React.FC = () => {
                 </div>
                 <span className="text-green-400 text-sm font-medium">23% de desconto</span>
               </div>
-              
+
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="bg-gold/10 p-1 rounded-full">
@@ -102,7 +102,7 @@ const OfferSection: React.FC = () => {
                     <p className="text-sm text-gray-400">Fórmula exclusiva com concentração ideal</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <div className="bg-gold/10 p-1 rounded-full">
                     <TruckIcon className="h-5 w-5 text-gold" />
@@ -114,17 +114,17 @@ const OfferSection: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="text-center">
-            <a 
-              href="https://seguro.kiranutri.com.br/r/HUB4DVME6E" 
-              target="_blank" 
+            <a
+              href="https://seguro.kiranutri.com.br/r/HUB4DVME6E"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn-gold text-lg py-4 px-8 md:px-12 shadow-xl hover:shadow-gold/40"
             >
               Quero minha pele impecável agora!
             </a>
-            
+
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <div className="flex items-center">
                 <LockIcon className="h-4 w-4 text-gold mr-1" />
@@ -139,14 +139,14 @@ const OfferSection: React.FC = () => {
                 <span className="text-sm text-gray-300">30 Dias de Garantia</span>
               </div>
             </div>
-            
+
             <div className="mt-8 flex justify-center gap-3">
               <CreditCard className="h-6 w-6 text-gold" />
               <span className="text-sm text-gray-300">
                 Em até 3x sem juros no cartão ou 10% de desconto no PIX
               </span>
             </div>
-            
+
             <p className="text-xs text-gray-500 mt-6">
               *Resultados podem variar de pessoa para pessoa.
             </p>
